@@ -9,26 +9,32 @@
     <link rel="stylesheet" href="../style/style.css">
   </head>
   <body>
-    <div id="my-container" width=960 height=600>
+    <div class="my-container">
       <h1 id="my-title">Test</h1>
       <p>
-        サッカーボールが落ちてくるだけです。
+        　サッカーボールが落ちてくるだけです。
       </p>
     </div>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <div id="unity-relative-container">
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width=960 height=600></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-warning"> </div>
+        <div id="unity-footer">
+          <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
+          <div id="unity-build-title">Test</div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Test</div>
-      </div>
+    </div>
+    <div class="my-container">
+      <br>
+      <a href="https://fluit-ole.github.io/">ホームに戻る</a>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
