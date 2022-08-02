@@ -5,7 +5,7 @@ body { background: rgb(254, 255, 242); text-align: center; padding-bottom: 20px;
 .my-container .comment { background: rgb(228, 228, 228); margin: 10px 0 10px 0; padding: 20px; }
 .my-container .table { border-collapse: collapse; background-color: rgb(255, 255, 198); counter-reset: num; }
 .my-container .table td { border : solid rgb(138, 138, 138) 1px; margin: 0; padding: 10px; }
-.my-container .table td:nth-child(2) { width: 20%; text-align: center; }
+.my-container .table td:nth-child(2) { padding: 5px; width: 20%; text-align: center; }
 .my-container .table td:nth-child(2):hover { opacity: 0.5; }
 .my-container .table .number {text-align: center;}
 .my-container .table .number:before { counter-increment: num; content: counter(num) };
