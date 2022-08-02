@@ -2,8 +2,8 @@ body { background: rgb(254, 255, 242); text-align: center; padding-bottom: 20px;
 .my-container { position: relative; width: 960px; display: inline-block; text-align: left;}
 .my-container .title { font-size: 40px; margin: 10px 0 10px 0; padding: 0; border-bottom: solid rgb(162, 162, 162) 2px;}
 .my-container .caption { background: rgb(234, 255, 203); margin: 10px 0 10px 0; padding: 20px; }
-.my-container .table { border-collapse: collapse; background-color: rgb(255, 255, 198);}
+.my-container .table { border-collapse: collapse; background-color: rgb(255, 255, 198); counter-reset: num; }
 .my-container .table td { border : solid rgb(138, 138, 138) 1px; margin: 0; padding: 10px; }
 .my-container .table td:nth-child(2) { width: 20%; text-align: center; }
 .my-container .table td:nth-child(2):hover { opacity: 0.5; }
-
+.my-container .table .number:before { counter-increment: num; content: counter(num) };
